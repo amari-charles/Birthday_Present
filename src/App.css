@@ -5,12 +5,12 @@
 .header {
   display: flex;
   justify-content: center;
-  height: 170px;
-  background-color: #b50027;
+  height: auto;
+  background-color: lightgoldenrodyellow;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 5rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 1% 0;
 }
 
 .page-container {

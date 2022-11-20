@@ -1,0 +1,6 @@
+.present {
+  height: 10em;
+  width: auto;
+  display: inline-block;
+  overflow: hidden;
+}

@@ -3,6 +3,7 @@ import CardFront from "./CardFront";
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import ConfettiPop from "./ConfettiPop";
+import "./CardItem.css";
 
 class CardItem extends React.Component {
   constructor() {
@@ -12,19 +13,16 @@ class CardItem extends React.Component {
     };
 
     this.handleClick = this.handleClick.bind(this);
-    this.confettiList = [];
   }
 
   handleClick(e) {
     e.preventDefault();
     this.setState((prevState) => ({ isFlipped: !prevState.isFlipped }));
-    this.confettiList.concat(<ConfettiPop></ConfettiPop>);
   }
 
   render() {
     return (
-      <div style={{ margin: "2%" }}>
-        {this.confettiList}
+      <div className="card-container">
         <ReactCardFlip
           isFlipped={this.state.isFlipped}
           flipDirection="horizontal"

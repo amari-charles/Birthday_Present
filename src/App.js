@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="header">Happy Birthday Vincent!</div>
-      <Confetti recycle={false} numberOfPieces={800} />
+      <Confetti recycle={false} numberOfPieces={1000} height={2500} />
       <div className="page-container">
         <CardList></CardList>
       </div>
